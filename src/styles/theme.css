@@ -1,0 +1,46 @@
+/* ========================================
+   CHRIS.DEV — Design System
+   ======================================== */
+
+/* Colores del modo claro */
+:root {
+    --app-background: #F2F3F5;
+    --app-surface: #FFFFFF;
+    --app-foreground: #1D1D1F;
+    --app-muted: #69696F;
+    --app-accent: #5046D9;
+    --app-border: #E5E5EA;
+    --app-accent-soft: #E9E9FA;
+}
+
+/* Colores del modo oscuro */
+[data-theme="dark"] {
+    --app-background: #0D0E11;
+    --app-surface: #181A1F;
+    --app-foreground: #F5F5F7;
+    --app-muted: #A1A1AA;
+    --app-accent: #B1B8FF;
+    --app-border: #292C33;
+    --app-accent-soft: #23263A;
+}
+
+/* Integración de nuestros colores con Tailwind */
+@theme inline {
+    --color-background: var(--app-background);
+    --color-surface: var(--app-surface);
+    --color-foreground: var(--app-foreground);
+    --color-muted: var(--app-muted);
+    --color-accent: var(--app-accent);
+    --color-border: var(--app-border);
+    --color-accent-soft: var(--app-accent-soft);
+}
+
+/* Configuración de dimensiones y tipografías */
+@theme {
+    --radius-bento: 1.5rem;
+    --radius-button: 0.75rem;
+
+--font-heading: "Manrope Variable", sans-serif;
+--font-body: "Inter Variable", sans-serif;
+--font-code: "JetBrains Mono Variable", monospace;
+}
