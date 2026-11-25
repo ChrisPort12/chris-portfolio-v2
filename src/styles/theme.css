@@ -4,6 +4,8 @@
 
 /* Colores del modo claro */
 :root {
+    color-scheme: light;
+
     --app-background: #F2F3F5;
     --app-surface: #FFFFFF;
     --app-foreground: #1D1D1F;
@@ -15,6 +17,8 @@
 
 /* Colores del modo oscuro */
 [data-theme="dark"] {
+    color-scheme: dark;
+    
     --app-background: #0D0E11;
     --app-surface: #181A1F;
     --app-foreground: #F5F5F7;

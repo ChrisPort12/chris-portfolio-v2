@@ -45,6 +45,7 @@ The visual identity combines three design approaches:
 - Vite
 - ESLint
 - Git and GitHub
+- Lucide React
 
 ### Planned technologies
 
@@ -71,6 +72,22 @@ The visual identity combines three design approaches:
 - [ ] Dev Lab and interactive arcade portfolio
 - [ ] Accessibility and SEO optimization
 - [ ] Production deployment
+
+## Theme System
+
+The portfolio includes a dynamic and accessible theme system
+designed to provide a consistent user experience.
+
+- Light, dark, and system appearance modes.
+- Persistent preferences using localStorage.
+- Automatic detection of system color scheme.
+- Real-time response to system appearance changes.
+- Reusable useTheme custom hook.
+- Accessible ThemeSwitcher component.
+- Lucide React icons.
+- Early theme initialization to prevent incorrect theme flashes.
+- Error handling for restricted browser storage.
+
 
 ## 🚀 Getting started
 

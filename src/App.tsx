@@ -1,12 +1,34 @@
+
+import { useTheme } from './hooks/useTheme'
+import { ThemeSwitcher } from './components/ThemeSwitcher'
+
 function App() {
+
+    // Administrar el estado de apariencia
+    const { theme, setTheme } = useTheme()
+
     return (
         <main className="flex min-h-screen items-center justify-center bg-background p-6">
 
             {/* Tarjeta de presentación */}
             <section className="w-full max-w-xl rounded-bento border border-border bg-surface p-6 shadow-sm sm:p-10">
 
-                <p className="font-code text-xs font-medium text-accent">
-                    PORTFOLIO 2.0 — MODERN BENTO EDITION
+                {/* Encabezado y selector de apariencia */}
+                <div className="flex flex-wrap items-center justify-between gap-4">
+
+                    <p className="font-code text-xs font-medium text-accent">
+                        PORTFOLIO 2.0
+                    </p>
+
+                    <ThemeSwitcher
+                        theme={theme}
+                        onThemeChange={setTheme}
+                    />
+
+                </div>
+
+                <p className="mt-6 font-code text-xs font-medium text-muted">
+                    MODERN BENTO EDITION
                 </p>
 
                 <h1 className="mt-4 font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
